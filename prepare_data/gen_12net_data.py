@@ -12,7 +12,7 @@ pos_save_dir = "../../DATA/12/positive"
 part_save_dir = "../../DATA/12/part"
 neg_save_dir = '../../DATA/12/negative'
 save_dir = "../../DATA/12"
-print("git sync test.")
+#print("git sync test.")
 if not os.path.exists(save_dir):
     os.mkdir(save_dir)
 if not os.path.exists(pos_save_dir):
@@ -38,7 +38,7 @@ for annotation in annotations:
     annotation = annotation.strip().split(' ')
     #image path
     im_path = annotation[0]
-    #print(im_path)
+    print(im_path)
     #boxed change to float type
     bbox = list(map(float, annotation[1:]))
     #gt
