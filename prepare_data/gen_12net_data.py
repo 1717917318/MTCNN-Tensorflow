@@ -12,6 +12,7 @@ pos_save_dir = "../../DATA/12/positive"
 part_save_dir = "../../DATA/12/part"
 neg_save_dir = '../../DATA/12/negative'
 save_dir = "../../DATA/12"
+print("git sync test.")
 if not os.path.exists(save_dir):
     os.mkdir(save_dir)
 if not os.path.exists(pos_save_dir):
