@@ -219,7 +219,7 @@ if __name__ == '__main__':
 
     #net = 'ONet'
 
-    net = 'RNet'
+    net = 'ONet'
 
     if net == "RNet":
         image_size = 24
