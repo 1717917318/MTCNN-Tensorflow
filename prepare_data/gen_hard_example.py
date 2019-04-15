@@ -217,7 +217,9 @@ def parse_args():
 
 if __name__ == '__main__':
 
-    net = 'ONet'
+    #net = 'ONet'
+
+    net = 'RNet'
 
     if net == "RNet":
         image_size = 24
