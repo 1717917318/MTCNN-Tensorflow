@@ -1,0 +1,448 @@
+2019-04-17 21:19:58.055553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 0 with properties: 
+name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7085
+pciBusID: 0000:02:00.0
+totalMemory: 5.93GiB freeMemory: 5.75GiB
+2019-04-17 21:19:58.055631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2019-04-17 21:19:58.411799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5533 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2019-04-17 21:19:58.628149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2019-04-17 21:19:58.628397: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5531 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2019-04-17 23:22:34.500329: W tensorflow/core/common_runtime/bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.62GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-04-17 23:22:34.575575: W tensorflow/core/common_runtime/bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-04-18 00:30:03.009480: W tensorflow/core/common_runtime/bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.90GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-04-18 00:30:08.306182: W tensorflow/core/common_runtime/bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.64GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-04-18 00:30:08.418737: W tensorflow/core/common_runtime/bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.33GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-04-18 00:30:10.092187: W tensorflow/core/common_runtime/bfc_allocator.cc:219] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.28GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+Called with argument:
+Namespace(batch_size=[2048, 256, 16], epoch=[18, 14, 16], min_face=20, prefix=['../data/MTCNN_model/PNet_No_Landmark/PNet', '../data/MTCNN_model/RNet_No_Landmark/RNet', '../data/MTCNN_model/ONet_No_Landmark/ONet'], shuffle=False, slide_window=False, stride=2, test_mode='RNet', thresh=[0.3, 0.1, 0.7], vis=False)
+Test model:  RNet
+../data/MTCNN_model/PNet_No_Landmark/PNet-18
+(1, ?, ?, 3)
+load summary for :  conv1/add
+(1, ?, ?, 10)
+load summary for :  pool1/MaxPool
+(1, ?, ?, 10)
+load summary for :  conv2/add
+(1, ?, ?, 16)
+load summary for :  conv3/add
+(1, ?, ?, 32)
+load summary for :  conv4_1/Reshape_1
+(1, ?, ?, 2)
+load summary for :  conv4_2/BiasAdd
+(1, ?, ?, 4)
+load summary for :  conv4_3/BiasAdd
+(1, ?, ?, 10)
+../data/MTCNN_model/PNet_No_Landmark/PNet-18
+restore models' param
+================================== RNet
+(256, 24, 24, 3)
+(256, 22, 22, 28)
+(256, 11, 11, 28)
+(256, 9, 9, 48)
+(256, 4, 4, 48)
+(256, 3, 3, 64)
+(256, 576)
+(256, 128)
+(256, 2)
+(256, 4)
+(256, 10)
+../data/MTCNN_model/RNet_No_Landmark/RNet-14
+restore models' param
+==================================
+load test data
+finish loading
+start detecting....
+100 out of 12880 images done
+1.537358 seconds for each image
+200 out of 12880 images done
+1.409608 seconds for each image
+300 out of 12880 images done
+1.289437 seconds for each image
+400 out of 12880 images done
+1.507301 seconds for each image
+500 out of 12880 images done
+1.184348 seconds for each image
+600 out of 12880 images done
+1.164440 seconds for each image
+700 out of 12880 images done
+1.291123 seconds for each image
+800 out of 12880 images done
+1.420516 seconds for each image
+900 out of 12880 images done
+1.046972 seconds for each image
+1000 out of 12880 images done
+1.077939 seconds for each image
+1100 out of 12880 images done
+1.192996 seconds for each image
+1200 out of 12880 images done
+1.182069 seconds for each image
+1300 out of 12880 images done
+1.099845 seconds for each image
+1400 out of 12880 images done
+1.009659 seconds for each image
+1500 out of 12880 images done
+1.150919 seconds for each image
+1600 out of 12880 images done
+1.198897 seconds for each image
+1700 out of 12880 images done
+0.983233 seconds for each image
+1800 out of 12880 images done
+0.910211 seconds for each image
+1900 out of 12880 images done
+1.071204 seconds for each image
+2000 out of 12880 images done
+1.141757 seconds for each image
+2100 out of 12880 images done
+1.076123 seconds for each image
+2200 out of 12880 images done
+0.915159 seconds for each image
+2300 out of 12880 images done
+1.210832 seconds for each image
+2400 out of 12880 images done
+1.400368 seconds for each image
+2500 out of 12880 images done
+1.406072 seconds for each image
+2600 out of 12880 images done
+1.411855 seconds for each image
+2700 out of 12880 images done
+1.453339 seconds for each image
+2800 out of 12880 images done
+1.246959 seconds for each image
+2900 out of 12880 images done
+0.988667 seconds for each image
+3000 out of 12880 images done
+1.532594 seconds for each image
+3100 out of 12880 images done
+1.242585 seconds for each image
+3200 out of 12880 images done
+1.439265 seconds for each image
+3300 out of 12880 images done
+1.746852 seconds for each image
+3400 out of 12880 images done
+1.612934 seconds for each image
+3500 out of 12880 images done
+1.463554 seconds for each image
+3600 out of 12880 images done
+1.341643 seconds for each image
+3700 out of 12880 images done
+1.439625 seconds for each image
+3800 out of 12880 images done
+1.438420 seconds for each image
+3900 out of 12880 images done
+1.506738 seconds for each image
+4000 out of 12880 images done
+1.490248 seconds for each image
+4100 out of 12880 images done
+1.247483 seconds for each image
+4200 out of 12880 images done
+1.371906 seconds for each image
+4300 out of 12880 images done
+1.482252 seconds for each image
+4400 out of 12880 images done
+1.205674 seconds for each image
+4500 out of 12880 images done
+1.046409 seconds for each image
+4600 out of 12880 images done
+1.031867 seconds for each image
+4700 out of 12880 images done
+1.466581 seconds for each image
+4800 out of 12880 images done
+1.459667 seconds for each image
+4900 out of 12880 images done
+1.406256 seconds for each image
+5000 out of 12880 images done
+2.213718 seconds for each image
+5100 out of 12880 images done
+1.308917 seconds for each image
+5200 out of 12880 images done
+0.738469 seconds for each image
+5300 out of 12880 images done
+1.146818 seconds for each image
+5400 out of 12880 images done
+1.006231 seconds for each image
+5500 out of 12880 images done
+1.082453 seconds for each image
+5600 out of 12880 images done
+1.312366 seconds for each image
+5700 out of 12880 images done
+1.357110 seconds for each image
+5800 out of 12880 images done
+0.776457 seconds for each image
+5900 out of 12880 images done
+0.717732 seconds for each image
+6000 out of 12880 images done
+0.941009 seconds for each image
+6100 out of 12880 images done
+1.015984 seconds for each image
+6200 out of 12880 images done
+1.019474 seconds for each image
+6300 out of 12880 images done
+0.941793 seconds for each image
+6400 out of 12880 images done
+0.890356 seconds for each image
+6500 out of 12880 images done
+1.062937 seconds for each image
+6600 out of 12880 images done
+1.159612 seconds for each image
+6700 out of 12880 images done
+1.233115 seconds for each image
+6800 out of 12880 images done
+1.188684 seconds for each image
+6900 out of 12880 images done
+1.236651 seconds for each image
+7000 out of 12880 images done
+1.290855 seconds for each image
+7100 out of 12880 images done
+1.041785 seconds for each image
+7200 out of 12880 images done
+0.867968 seconds for each image
+7300 out of 12880 images done
+0.800282 seconds for each image
+7400 out of 12880 images done
+0.666353 seconds for each image
+7500 out of 12880 images done
+0.600524 seconds for each image
+7600 out of 12880 images done
+0.778110 seconds for each image
+7700 out of 12880 images done
+0.899449 seconds for each image
+7800 out of 12880 images done
+0.700180 seconds for each image
+7900 out of 12880 images done
+0.895300 seconds for each image
+8000 out of 12880 images done
+1.028316 seconds for each image
+8100 out of 12880 images done
+0.759764 seconds for each image
+8200 out of 12880 images done
+0.736605 seconds for each image
+8300 out of 12880 images done
+0.728523 seconds for each image
+8400 out of 12880 images done
+0.533361 seconds for each image
+8500 out of 12880 images done
+0.508021 seconds for each image
+8600 out of 12880 images done
+0.701682 seconds for each image
+8700 out of 12880 images done
+0.696385 seconds for each image
+8800 out of 12880 images done
+0.838081 seconds for each image
+8900 out of 12880 images done
+0.657028 seconds for each image
+9000 out of 12880 images done
+0.641807 seconds for each image
+9100 out of 12880 images done
+1.265292 seconds for each image
+9200 out of 12880 images done
+1.099703 seconds for each image
+9300 out of 12880 images done
+0.898802 seconds for each image
+9400 out of 12880 images done
+1.055768 seconds for each image
+9500 out of 12880 images done
+1.170349 seconds for each image
+9600 out of 12880 images done
+1.118276 seconds for each image
+9700 out of 12880 images done
+1.057701 seconds for each image
+9800 out of 12880 images done
+1.300569 seconds for each image
+9900 out of 12880 images done
+1.303746 seconds for each image
+10000 out of 12880 images done
+1.148618 seconds for each image
+10100 out of 12880 images done
+1.521007 seconds for each image
+10200 out of 12880 images done
+1.246916 seconds for each image
+10300 out of 12880 images done
+1.489647 seconds for each image
+10400 out of 12880 images done
+1.605250 seconds for each image
+10500 out of 12880 images done
+1.069027 seconds for each image
+10600 out of 12880 images done
+1.228700 seconds for each image
+10700 out of 12880 images done
+1.123515 seconds for each image
+10800 out of 12880 images done
+0.959433 seconds for each image
+10900 out of 12880 images done
+1.171920 seconds for each image
+11000 out of 12880 images done
+1.812295 seconds for each image
+11100 out of 12880 images done
+1.036509 seconds for each image
+11200 out of 12880 images done
+0.607624 seconds for each image
+11300 out of 12880 images done
+0.668381 seconds for each image
+11400 out of 12880 images done
+1.011658 seconds for each image
+11500 out of 12880 images done
+1.278376 seconds for each image
+11600 out of 12880 images done
+0.947671 seconds for each image
+11700 out of 12880 images done
+1.221624 seconds for each image
+11800 out of 12880 images done
+0.953244 seconds for each image
+11900 out of 12880 images done
+0.788596 seconds for each image
+12000 out of 12880 images done
+0.969980 seconds for each image
+12100 out of 12880 images done
+1.198796 seconds for each image
+12200 out of 12880 images done
+1.244692 seconds for each image
+12300 out of 12880 images done
+1.349101 seconds for each image
+12400 out of 12880 images done
+1.390714 seconds for each image
+12500 out of 12880 images done
+1.275957 seconds for each image
+12600 out of 12880 images done
+0.951526 seconds for each image
+12700 out of 12880 images done
+1.191839 seconds for each image
+12800 out of 12880 images done
+1.108984 seconds for each image
+num of images 12880
+time cost in average1.115  pnet 0.837  rnet 0.277  onet 0.000
+boxes length: 12880
+finish detecting 
+save_path is :
+../../DATA/no_LM48/ONet
+48测试完成开始OHEM
+processing 12880 images in total
+12880
+12880
+0 images done
+100 images done
+200 images done
+300 images done
+400 images done
+500 images done
+600 images done
+700 images done
+800 images done
+900 images done
+1000 images done
+1100 images done
+1200 images done
+1300 images done
+1400 images done
+1500 images done
+1600 images done
+1700 images done
+1800 images done
+1900 images done
+2000 images done
+2100 images done
+2200 images done
+2300 images done
+2400 images done
+2500 images done
+2600 images done
+2700 images done
+2800 images done
+2900 images done
+3000 images done
+3100 images done
+3200 images done
+3300 images done
+3400 images done
+3500 images done
+3600 images done
+3700 images done
+3800 images done
+3900 images done
+4000 images done
+4100 images done
+4200 images done
+4300 images done
+4400 images done
+4500 images done
+4600 images done
+4700 images done
+4800 images done
+4900 images done
+5000 images done
+5100 images done
+5200 images done
+5300 images done
+5400 images done
+5500 images done
+5600 images done
+5700 images done
+5800 images done
+5900 images done
+6000 images done
+6100 images done
+6200 images done
+6300 images done
+6400 images done
+6500 images done
+6600 images done
+6700 images done
+6800 images done
+6900 images done
+7000 images done
+7100 images done
+7200 images done
+7300 images done
+7400 images done
+7500 images done
+7600 images done
+7700 images done
+7800 images done
+7900 images done
+8000 images done
+8100 images done
+8200 images done
+8300 images done
+8400 images done
+8500 images done
+8600 images done
+8700 images done
+8800 images done
+8900 images done
+9000 images done
+9100 images done
+9200 images done
+9300 images done
+9400 images done
+9500 images done
+9600 images done
+9700 images done
+9800 images done
+9900 images done
+10000 images done
+10100 images done
+10200 images done
+10300 images done
+10400 images done
+10500 images done
+10600 images done
+10700 images done
+10800 images done
+10900 images done
+11000 images done
+11100 images done
+11200 images done
+11300 images done
+11400 images done
+11500 images done
+11600 images done
+11700 images done
+11800 images done
+11900 images done
+12000 images done
+12100 images done
+12200 images done
+12300 images done
+12400 images done
+12500 images done
+12600 images done
+12700 images done
+12800 images done

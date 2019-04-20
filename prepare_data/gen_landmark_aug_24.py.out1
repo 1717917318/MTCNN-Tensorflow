@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "gen_landmark_aug_24.py", line 189, in <module>
+    imgs,landmarks = GenerateData(train_txt, OUTPUT,net,argument=True)
+  File "gen_landmark_aug_24.py", line 60, in GenerateData
+    data = getDataFromTxt(ftxt)
+TypeError: getDataFromTxt() missing 1 required positional argument: 'data_path'
